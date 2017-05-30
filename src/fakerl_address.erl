@@ -81,8 +81,8 @@ geo_coordinate() ->
 
 %% @doc Returns a laitude co-ordinate
 latitude() ->
-   ((random:uniform() * 180) - 90).
+   ((rand:uniform() * 180) - 90).
 
 %% @doc Returns a longitude co-ordinate
 longitude() ->
-   ((random:uniform() * 360) - 180).
+   ((rand:uniform() * 360) - 180).

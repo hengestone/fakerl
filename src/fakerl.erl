@@ -358,7 +358,7 @@ bothify(Text) ->
 %% @doc Return new list by shuffling the members of list
 -spec shuffle(list()) -> list().
 shuffle(L) when is_list(L) ->
-    [X||{_,X} <- lists:sort([ {random:uniform(), N} || N <- L])].
+    [X||{_,X} <- lists:sort([ {rand:uniform(), N} || N <- L])].
 
 %% @doc Sets the locale
 locale(Locale) when is_atom(Locale) ->

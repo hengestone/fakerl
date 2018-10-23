@@ -8,22 +8,24 @@
 %%%-------------------------------------------------------------------
 -module(fakerl_address).
 -author("Mawuli Adzaku <mawuli@mawuli.me>").
--export([country/0,
-         countries/0,
+-export([
+         address/0,
+         building_number/0,
          cities/0,
          city/0,
          city_suffix/0,
+         countries/0,
+         country/0,
+         geo_coordinate/0,
+         latitude/0,
+         longitude/0,
+         postcode/0,
          state/0,
          state_abbr/0,
-         street_suffix/0,
-         street_name/0,
          street_address/0,
-         postcode/0,
-         building_number/0,
-         address/0,
-         geo_coordinate/0,
-         longitude/0,
-         latitude/0]).
+         street_name/0,
+         street_suffix/0
+        ]).
 
 
 

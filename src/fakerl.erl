@@ -11,44 +11,51 @@
 -include("fakerl.hrl").
 
 %% Interface to common functions
--export([first_name/0,
-         last_name/0,
-         user_name/0,
-         name/0,
+-export([
          address/0,
-         text/0,
          company/0,
-         country/0]).
+         country/0,
+         email/0,
+         first_name/0,
+         last_name/0,
+         name/0,
+         text/0,
+         user_name/0
+        ]).
 
 %% API
--export([random_number/0,
-         random_number/1,
-         random_letter/1,
-         random_letter/0,
-         random_element/1,
+-export([
          random/1,
-         random/2]).
+         random/2,
+         random_element/1,
+         random_letter/0,
+         random_letter/1,
+         random_number/0,
+         random_number/1
+        ]).
 
--export([start/0,
-         fetch/1,
-         fetch/2,
-         parse/1,
-         parse/2,
-         tokenize/1,
-         format/2,
-         numerify/1,
-         letterify/1,
+-export([
          bothify/1,
-         shuffle/1,
-         safe_var_idx_regex/1,
-         locale_data_key/1,
-         fetch_from_nodes/1,
-         locale/0,
-         locale/1,
-         locale_file/1,
          config/1,
          config/2,
-         get_locale_data/1]).
+         fetch/1,
+         fetch/2,
+         fetch_from_nodes/1,
+         format/2,
+         get_locale_data/1,
+         letterify/1,
+         locale/0,
+         locale/1,
+         locale_data_key/1,
+         locale_file/1,
+         numerify/1,
+         parse/1,
+         parse/2,
+         safe_var_idx_regex/1,
+         shuffle/1,
+         start/0,
+         tokenize/1
+        ]).
 
 
 %%%-------------------------------------------------------------------
@@ -68,6 +75,9 @@ last_name() ->
 
 user_name() ->
     fakerl_internet:user_name().
+
+email() ->
+    fakerl_internet:email().
 
 name() ->
     fakerl_names:name().

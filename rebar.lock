@@ -15,7 +15,7 @@
   0},
  {<<"qdate_localtime">>,{pkg,<<"qdate_localtime">>,<<"1.1.0">>},1},
  {<<"yamerl">>,
-  {git,"https://github.com/yakaz/yamerl",
+  {git,"https://github.com/yakaz/yamerl.git",
        {ref,"4e5a54a5a4a0cd9dc8ee30c8356642e9a2c3a443"}},
   0}]}.
 [

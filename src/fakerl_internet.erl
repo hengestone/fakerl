@@ -54,10 +54,7 @@ user_name() ->
     string:to_lower(Shuffled).
 
 domain_name() ->
-    domain_word() ++ "." ++ tld().
-
-domain_word() ->
-    fakerl:parse("name.name").
+    fakerl:parse("internet.domain_name").
 
 tld() ->
     fakerl:fetch("internet.tlds").

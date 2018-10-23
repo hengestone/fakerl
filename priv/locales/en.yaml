@@ -62,6 +62,7 @@ en:
       - "?{{last_name}}"
       - "?##{{uri_paths}}"
     domain_name:
+      - "{{free_email_domain}}"
       - "{{name.first_name}}.{{tlds}}"
       - "{{name.last_name}}.{{tlds}}"
       - "{{name.first_name}}.{{name.last_name}}.{{tlds}}"

@@ -143,7 +143,7 @@ random(L) when is_list(L) ->
       To :: integer(),
       RandomElement :: any().
 random(From, To) ->
-   crypto:rand_uniform(From, To).
+   crypto:rand_uniform(From, To+1). % Because From =< N < To, see docs
 
 %% @doc Returns key value in locale config
 fetch(Key) ->
